@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS - CASCADING STYLE SHEETS  ( CSS 3 )</title>
+<style>
+	
+/*	4 type selectors*/
+
+/*1 - class ( . )
+2 - id    ( # )
+3 - TAG  (all tag used here)
+4 - universal , all ( * )*/
+
+#bx{
+	height: 50px;width: 50px;
+}
+#bg{background: gold;}
+
+*{
+	font-family: cursive;
+}
+
+.india{height: 500px;width: 100%;background: red}
+.h10 {
+  height: 10px;
+}
+
+.h20 {
+  height: 20px;
+}
+
+.h30 {
+  height: 30px;
+}
+
+.h40 {
+  height: 40px;
+}
+
+.h50 {
+  height: 50px;
+}
+
+.h60 {
+  height: 60px;
+}
+
+.h70 {
+  height: 70px;
+}
+
+.h80 {
+  height: 80px;
+}
+
+.h90 {
+  height: 90px;
+}
+
+.h100 {
+  height: 100px;
+}
+.ml50 {
+  margin-left: 50px;
+}
+
+.ml60 {
+  margin-left: 60px;
+}
+
+.ml70 {
+  margin-left: 70px;
+}
+
+.ml80 {
+  margin-left: 80px;
+}
+
+.ml90 {
+  margin-left: 90px;
+}
+
+.ml100 {
+  margin-left: 100px;
+}
+
+.ml110 {
+  margin-left: 110px;
+}
+
+.ml120 {
+  margin-left: 120px;
+}
+
+.ml130 {
+  margin-left: 130px;
+}
+
+.ml140 {
+  margin-left: 140px;
+}
+
+.ml150 {
+  margin-left: 150px;
+}
+
+.ml160 {
+  margin-left: 160px;
+}
+
+.ml170 {
+  margin-left: 170px;
+}
+
+.ml180 {
+  margin-left: 180px;
+}
+
+.ml190 {
+  margin-left: 190px;
+}
+
+.ml200 {
+  margin-left: 200px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt70 {
+  margin-top: 70px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt90 {
+  margin-top: 90px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt110 {
+  margin-top: 110px;
+}
+
+.mt120 {
+  margin-top: 120px;
+}
+
+.mt130 {
+  margin-top: 130px;
+}
+
+.mt140 {
+  margin-top: 140px;
+}
+
+.mt150 {
+  margin-top: 150px;
+}
+
+.mt160 {
+  margin-top: 160px;
+}
+
+.mt170 {
+  margin-top: 170px;
+}
+
+.mt180 {
+  margin-top: 180px;
+}
+
+.mt190 {
+  margin-top: 190px;
+}
+
+.mt200 {
+  margin-top: 200px;
+}
+
+p{color: red;font-family: cursive;font-size: 24px}
+
+.h50{height: 50px}
+.h100{height: 100px}
+.h200{height: 200px}
+.h300{height: 300px}
+.h400{height: 400px}
+.h500{height: 500px}
+
+.w10{width: 10%}
+.w20{width: 20%}
+.w30{width: 30%}
+.w40{width:40%}
+.w50{width: 50%}
+.w60{width: 60%}
+.w70{width: 70%}
+.w80{width: 80%}
+.w90{width: 90%}
+.w100{width: 100%}
+
+.bgb{background: blue;}
+.bgg{background: green;}
+.bgm{background:maroon;}
+.bgm:hover{background:orange;}
+.bgp{background:purple;}
+.bgy{background: yellow;}
+.bgy:hover{background: black}
+
+
+.clr{color: red;}
+.clb{color: blue;}
+.clg{color: grey;}
+
+.cls{color: silver;}
+.cls:hover{color:green;}
+
+.fl{float: left;}
+.btn{
+	height: 50px;width: 200px;background: black;color: yellow;border-radius: 30px;transition: 2s;
+}
+
+.btn:hover{
+	height: 50px;width: 200px;background: blue;color: yellow;border-radius: 30px;margin-left: 50px;transition: 2s;
+}
+.mybox{
+	height: 300px;width: 300px;transition: 2s;
+}
+
+.mybox:hover{
+	transform: rotate(-360deg);transition: 2s;margin-left: 200px;border-radius: 100%;box-shadow: 0px 0px 10px red,0px 0px 20px purple,0px 0px 10px skyblue,0px 0px 30px yellow,10px 0px 40px blue;
+}
+
+
+h1{font-family: sans-serif;}
+
+.fb{height: 50px;width: 200px;background: blue;color: white;transition: .5s;margin-left: 40%;margin-top: 200px}
+.fb:hover{height: 50px;width: 200px;background: skyblue;color: white;border-radius: 30px;
+	transform: scale(1.5);}
+
+	.is{height: 50px;width: 200px;background: blue;color: white;transition: .5s;margin-left: 40%;margin-top: 200px}
+.is:hover{height: 50px;width: 200px;background: skyblue;color: white;border-radius: 30px;
+	transform: scale(0.8);}
+
+
+.in{height: 50px;width: 200px;background: yellow;color: blue;
+	transition: 2s;font-size: 22px;
+}
+
+.in:hover{
+	background: green;color: blue;margin-left: 0px;transform: scale(0.8);
+}
+</style>
+
+</head>
+<body>
+<!-- 
+3 type of css
+1 - inline css (koi bi tag ma space kari style apply karie e)
+2 - internal css (inside head tag use style tag)
+3 - internal css (create a new page and save with .css)
+ -->
+<button class="fb">FACEBOOK</button>
+<button class="is">INSTAGRAM</button>
+ <div class="mybox bgm"></div>
+
+ <h1 class="cls bgm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</h1>
+
+<h2 class="cls bgm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</h2>
+
+<h3 class="cls bgm ml100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</h3>
+<button class="btn">SUBMIT	</button>
+
+
+ <div class="india"></div>
+ <div class="india"></div>
+
+
+
+
+
+
+
+<div class="h300 w100 bgm"> 
+<div class="h300 w20 fl bgb"> </div>
+<div class="h300 w20 fl bgm"> </div>
+<div class="h300 w20 fl bgb"> </div>
+<div class="h300 w20 fl bgm"> </div>
+<div class="h300 w20 fl bgp"> </div>
+</div>
+
+<div class="h100 w100 bgm">
+<div class="h100 w50 fl bgm"></div>
+<div class="h100 w50 fl bgb"></div>
+	
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p class="clb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+HY
+
+<div id="bx" class="bgm"></div>
+<div id="bx" class="bgm"></div>
+<div id="bx" class="bgm"></div>
+<div id="bx" class="bgm"></div>
+<div id="bx" class="bgm"></div>
+
+<button class="in">link in</button>
+</body>
+</html>

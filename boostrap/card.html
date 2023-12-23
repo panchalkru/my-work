@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card col-md-3">
+
+            <div class="card-body">
+                <img src="img/girl.jfif" alt="" class="col-md-12">
+
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-dark">submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== -->
+
+
+    <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#hi">click</button>
+    <div id="hi" class="collapse">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nam veritatis dolorem voluptas quidem est
+        mollitia sit eveniet sed corporis itaque ipsum deleniti dolores hic necessitatibus, aliquam provident libero
+        corrupti!
+    </div>
+
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mo">
+        Log in
+    </button>
+    <div class="modal" id="mo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>this is title</h1>
+                </div>
+                <div class="modal-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero blanditiis
+                    veritatis saepe in quo distinctio laudantium nobis, repellendus illum eum est fugit assumenda, ad
+                    quos? Obcaecati similique voluptatum quod culpa.</div>
+                <div class="modal-footer">
+                    <button class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item  active">
+        <img src="img/pro-5.jpg" alt="Los Angeles" class="d-block" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/pro-35.webp" alt="Chicago" class="d-block" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="img/pro-36.jpg" alt="New York" class="d-block" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>  
+      </div>
+      <div class="carousel-item ">
+        <img src="img/11.jpg" alt="New York" class="d-block" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>  
+      </div>
+      <div class="carousel-item">
+        <img src="img/forest.jfif" alt="New York" class="d-block" style="width:100%;height: 500px;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+  <div class="container-fluid mt-3">
+    <h3>Carousel Example</h3>
+    <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+</body>
+
+</html>
